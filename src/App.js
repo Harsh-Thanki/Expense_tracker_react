@@ -5,13 +5,13 @@ function App() {
   let expenses = [
     {
       id: 'e1',
-      date : new Date(2022, 12, 27),
+      date : new Date(2022, 11, 27),
       title: 'Car Insurence',
       amount: 350
     },
     {
       id: 'e2',
-      date : new Date(2022, 12, 31),
+      date : new Date(2022, 11, 31),
       title: 'Shopping for New Year',
       amount: 10000
     },
