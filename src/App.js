@@ -10,6 +10,10 @@ function App() {
     <div>
       <h1>List of Expenses</h1>
       <ExpenseItem date={expenseDate} title={expenseTitle} amount={expenseAmount}/>
+      <ExpenseItem date={expenseDate} title={expenseTitle} amount={expenseAmount}/>
+      <ExpenseItem date={expenseDate} title={expenseTitle} amount={expenseAmount}/>
+      <ExpenseItem date={expenseDate} title={expenseTitle} amount={expenseAmount}/>
+      <ExpenseItem date={expenseDate} title={expenseTitle} amount={expenseAmount}/>
     </div>
   );
 }
