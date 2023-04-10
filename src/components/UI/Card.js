@@ -1,6 +1,6 @@
 import './Card.css';
 
-function Card(props){
+const Card = (props) => {
     console.log(props.className);
     let style_classes = 'card ' + props.className;
     return (
