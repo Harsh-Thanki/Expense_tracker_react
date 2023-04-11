@@ -16,9 +16,12 @@ const ExpenseForm = () => {
     const date_change_handler = (event) => {
         form_date_change(event.target.value);
     };
+    const form_submit_handler = (event) => {
+        event.preventDefault();
+    };
 
     return (
-        <form>
+        <form onSubmit={form_submit_handler}>
             <div className='new-expense__controls'>
                 <div className='expense__control'>
                     <label>Title</label>
