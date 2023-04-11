@@ -1,20 +1,31 @@
 import './ExpenseForm.css';
 
 const ExpenseForm = () => {
+
+    const title_change_handler = (event) => {
+        console.log(event.target.value);
+    };
+    const amount_change_handler = (event) => {
+        console.log(event.target.value);
+    };
+    const date_change_handler = (event) => {
+        console.log(event.target.value);
+    };
+
     return (
         <form>
             <div className='new-expense__controls'>
                 <div className='expense__control'>
                     <label>Title</label>
-                    <input type='text'/>
+                    <input type='text' onChange={title_change_handler}/>
                 </div>
                 <div className='expense__control'>
                     <label>Amount</label>
-                    <input type='number'min='0.01' step='0.01'/>
+                    <input type='number'min='0.01' step='0.01' onChange={amount_change_handler}/>
                 </div>
                 <div className='expense__control'>
                     <label>Date</label>
-                    <input type='date'/>
+                    <input type='date' onChange={date_change_handler}/>
                 </div>
             </div>
             <div className='new-expense__actions'>
