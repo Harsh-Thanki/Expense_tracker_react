@@ -18,6 +18,13 @@ const ExpenseForm = () => {
     };
     const form_submit_handler = (event) => {
         event.preventDefault();
+
+        const form_data = {
+            title: form_title,
+            amount: form_amount,
+            date: new Date(form_date)
+        }
+        console.log(form_data);
     };
 
     return (
