@@ -35,10 +35,14 @@ const App = () => {
       amount: 210
     }
   ];
+
+  const form_data = (props) => {
+    console.log(props);
+  }
  
   return (
     <div>
-      <NewExpense/>
+      <NewExpense send_form_data={form_data}/>
       <Expenses items={ expenses }></Expenses>
     </div>
   );
