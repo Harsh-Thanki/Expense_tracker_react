@@ -1,13 +1,14 @@
 import './NewExpense.css'
 import ExpenseForm from './ExpenseForm';
 
-const NewExpense = () => {
+const NewExpense = (props) => {
 
     const get_expense_form_data = (form_data) => {
         const new_form_data = {
             id: Math.random().toString(),
             ...form_data
         };
+        props.send_form_data(new_form_data);
         console.log(new_form_data);
     };
 
