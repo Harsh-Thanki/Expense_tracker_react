@@ -9,7 +9,7 @@ class HelloHandler(RequestHandler):
 
 def make_app():
     urls = [("/", HelloHandler)]
-    return Application(urls)
+    return Application(urls, debug=True)
 
 
 if __name__ == '__main__':
