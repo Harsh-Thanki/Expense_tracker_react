@@ -1,14 +1,16 @@
 from tornado.web import Application, RequestHandler
 from tornado.ioloop import IOLoop
 
+expenses = []
 
-class HelloHandler(RequestHandler):
+
+class Expenses(RequestHandler):
     def get(self):
-        self.write({'message': 'hello world'})
+        self.write({'expenses': expenses})
 
 
 def make_app():
-    urls = [("/", HelloHandler)]
+    urls = [("/", Expenses)]
     return Application(urls, debug=True)
 
 
