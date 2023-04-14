@@ -1,3 +1,5 @@
+import json
+
 from tornado.web import Application, RequestHandler
 from tornado.ioloop import IOLoop
 
@@ -9,8 +11,16 @@ class Expenses(RequestHandler):
         self.write({'expenses': expenses})
 
 
+class Expense(RequestHandler):
+    def post(self):
+        expenses.append(json.loads(self.request.body))
+        self.write({'message': json.loads(self.request.body)})
+
+
 def make_app():
-    urls = [("/", Expenses)]
+    urls = [("/", Expenses),
+            ("/add/expense/", Expense)
+            ]
     return Application(urls, debug=True)
 
 
