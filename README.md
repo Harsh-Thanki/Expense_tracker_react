@@ -1,3 +1,10 @@
+# Project status as per analysis done at 20th april, 2023:
+
+Static & Dynamic content devlopment has been almost done except minor changes.
+
+Next goal:
+An API to feed the data is currently under development and currently is in 'Dev1' branch.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
